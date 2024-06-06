@@ -5,12 +5,16 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-}
+};
 
 module.exports = {
   content: ['./index.html', './src/**/*.js'], // Adjust according to your file structure
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        128: '32rem',
+      }
+    },
   },
   plugins: [],
-}
+};
