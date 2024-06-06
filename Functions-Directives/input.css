@@ -20,5 +20,11 @@
 
 .content-area {
   @apply bg-green-200;
-  height: theme('spacing.128')
+  height: theme("spacing.128");
+}
+
+@media screen(xl) {
+  body {
+    @apply bg-black text-white;
+  }
 }
