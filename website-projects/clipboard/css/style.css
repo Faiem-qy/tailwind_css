@@ -639,6 +639,10 @@ h5 {
   display: flex;
 }
 
+.w-32 {
+  width: 8rem;
+}
+
 .max-w-6xl {
   max-width: 72rem;
 }
@@ -739,6 +743,11 @@ h5 {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .text-center {
