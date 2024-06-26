@@ -590,14 +590,14 @@ video {
   top: 12rem;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .my-32 {
@@ -609,16 +609,16 @@ video {
   margin-bottom: 8rem;
 }
 
-.mt-32 {
-  margin-top: 8rem;
-}
-
 .mb-6 {
   margin-bottom: 1.5rem;
 }
 
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mt-32 {
+  margin-top: 8rem;
 }
 
 .flex {
@@ -641,10 +641,6 @@ video {
   max-width: 32rem;
 }
 
-.max-w-6 {
-  max-width: 1.5rem;
-}
-
 .max-w-md {
   max-width: 28rem;
 }
@@ -659,11 +655,6 @@ video {
 
 .border-2 {
   border-width: 2px;
-}
-
-.bg-zinc-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(212 212 216 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -714,14 +705,19 @@ video {
   text-transform: uppercase;
 }
 
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-gray-900 {
+.text-gray-600 {
   --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity));
+  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 #hero {
@@ -735,10 +731,6 @@ video {
     background-image: url("../images/mobile/image-hero.jpg");
     background-position: center;
   }
-}
-
-.group:hover .group-hover\:border {
-  border-width: 1px;
 }
 
 .group:hover .group-hover\:border-b {
@@ -808,13 +800,13 @@ video {
     text-align: left;
   }
 
-  .md\:text-6xl {
-    font-size: 3.75rem;
+  .md\:text-5xl {
+    font-size: 3rem;
     line-height: 1;
   }
 
-  .md\:text-5xl {
-    font-size: 3rem;
+  .md\:text-6xl {
+    font-size: 3.75rem;
     line-height: 1;
   }
 }
