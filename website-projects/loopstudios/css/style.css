@@ -582,39 +582,8 @@ video {
   }
 }
 
-.btn {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  border-width: 2px;
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  font-family: Alata;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: .3em;
-}
-
-.btn:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.absolute {
-  position: absolute;
-}
-
 .relative {
   position: relative;
-}
-
-.bottom-4 {
-  bottom: 1rem;
 }
 
 .top-48 {
@@ -666,10 +635,6 @@ video {
 
 .h-10 {
   height: 2.5rem;
-}
-
-.w-52 {
-  width: 13rem;
 }
 
 .w-full {
@@ -771,6 +736,32 @@ video {
   transition-duration: 200ms;
 }
 
+@layer
+@layer components {
+  .btn {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-width: 2px;
+    --tw-border-opacity: 1;
+    border-color: rgb(0 0 0 / var(--tw-border-opacity));
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-family: Alata;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+  }
+
+  .btn:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+}
+
 .item-container {
   display: flex;
   width: 100%;
@@ -867,18 +858,9 @@ video {
   border-color: rgb(239 246 255 / var(--tw-border-opacity));
 }
 
-.group:hover .group-hover\:text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
 @media (min-width: 768px) {
   .md\:absolute {
     position: absolute;
-  }
-
-  .md\:bottom-8 {
-    bottom: 2rem;
   }
 
   .md\:right-0 {
@@ -931,11 +913,6 @@ video {
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
-  }
-
-  .md\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
   }
 
   .md\:py-20 {
