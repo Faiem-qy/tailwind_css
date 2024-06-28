@@ -605,12 +605,20 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
 
 .top-48 {
   top: 12rem;
+}
+
+.bottom-4 {
+  bottom: 1rem;
 }
 
 .mx-2 {
@@ -662,6 +670,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-52 {
+  width: 13rem;
 }
 
 .max-w-6xl {
@@ -802,6 +814,11 @@ video {
   border-color: rgb(239 246 255 / var(--tw-border-opacity));
 }
 
+.group:hover .group-hover\:text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 @media (min-width: 768px) {
   .md\:absolute {
     position: absolute;
@@ -809,6 +826,10 @@ video {
 
   .md\:right-0 {
     right: 0px;
+  }
+
+  .md\:bottom-8 {
+    bottom: 2rem;
   }
 
   .md\:m-32 {
@@ -872,6 +893,11 @@ video {
   .md\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .md\:pl-20 {
