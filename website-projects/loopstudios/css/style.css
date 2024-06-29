@@ -975,6 +975,14 @@ h5 {
   transform: rotate(45deg) translateY(6px) translateX(6px);
 }
 
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
