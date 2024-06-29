@@ -38,3 +38,13 @@
     background-position: center;
   }
 }
+
+/* Hamburger menu */
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transtition: all 0.25s;
+  position: relative;
+}
+

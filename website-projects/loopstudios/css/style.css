@@ -936,6 +936,16 @@ h5 {
   }
 }
 
+/* Hamburger menu */
+
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transtition: all 0.25s;
+  position: relative;
+}
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1066,3 +1076,4 @@ h5 {
     line-height: 1;
   }
 }
+
