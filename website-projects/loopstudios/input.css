@@ -60,3 +60,11 @@
   transform: rotate(0);
   transition: all 0.5s;
 }
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
