@@ -869,6 +869,11 @@ video {
   color: hsl(180 66% 49% / var(--tw-text-opacity));
 }
 
+.text-darkViolet {
+  --tw-text-opacity: 1;
+  color: hsl(257 27% 26% / var(--tw-text-opacity));
+}
+
 .placeholder-yellow-500::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(234 179 8 / var(--tw-placeholder-opacity));
