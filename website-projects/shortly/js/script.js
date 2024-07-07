@@ -4,10 +4,32 @@ const errMsg = document.getElementById('err-msg');
 
 linkForm.addEventListener('submit', formSubmit);
 
-function formSubmit(e) {
-  e.preventDefault();
-  if (input.value === '') {
-    errMsg.innerHTML = 'Please enter something';
-  };
+// Validate a URL
+function validURL(str) {
+  var pattern = new RegExp(
+    '^(https?:\\/\\/)?' + // protocol
+    '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|' +
+    '((\\d{1,3}\\.){3}\\d{1,3}))' +
+    '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*' +
+    '(\\?[;&a-z\\d%_.~+=-]*)?' +
+    '(\\#[-a-z\\d_]*)?$',
+    'i'
+  );
+  return !!pattern.test(str);
 }
 
+function formSubmit(e) {
+  e.preventDefault();
+
+  if (input.value === '') {
+    errMsg.innerHTML = 'Please enter something';
+    input.classList.add('border-red-500');
+  } else if (!validURL(input.value)) {
+    errMsg.innerHTML = 'Please enter a valid URL';
+    input.classList.add('border-red-500');
+  } else {
+    errMsg.innerHTML = '';
+    input.classList.remove('border-red-500');
+    alert('Success');
+  }
+}
