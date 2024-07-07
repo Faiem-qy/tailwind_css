@@ -641,6 +641,10 @@ video {
   max-width: 56rem;
 }
 
+.max-w-xs {
+  max-width: 20rem;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -897,6 +901,10 @@ video {
 @media (min-width: 768px) {
   .md\:w-180 {
     width: 32rem;
+  }
+
+  .md\:max-w-md {
+    max-width: 28rem;
   }
 
   .md\:flex-row {
