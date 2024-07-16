@@ -12,6 +12,16 @@ module.exports = {
         accentBlue: 'hsl(198, 60%, 50%)',
         lightRed: 'hsl(0, 100%, 63%)',
       },
+      fontFamily: {
+        sans: ['Raleway', 'sans-serif'],
+        opensans: ['Open Sans', 'sans-serif'],
+      },
+      backgroundImage: (theme) => ({
+        'logo-dark-mode': "url('../images/logo-dark-mode.svg')",
+        'logo-light-mode': "url('../images/logo-light-mode.svg')",
+        'curvy-dark-mode': "url('../images/bg-curvy-dark-mode.svg')",
+        'curvy-light-mode': "url('../images/bg-curvy-light-mode.svg')",
+      }),
     },
   },
   plugins: [],
