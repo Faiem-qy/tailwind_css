@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,7 +13,11 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Simple Tailwind Starter</title>
   </head>
-  <body class="bg-black">
-    <h1 class="text-white animate-pulse text-3xl">Simple Tailwind</h1>
+  <body class="dark:bg-darkBlue dark:text-white font-opensans">
+<!-- Header -->
+ <header class="container mx-auto mt-10 px-6 text-center h-40 md:h-20">
+  <!-- Dynamic Logo -->
+   <div class="bg-logo-light-mode dark:bg-logo-dark-mode bg-no-repeat h-20 w-48 mx-auto md:mx-0 md:absolute top-10 left-10"></div>
+ </header>
   </body>
 </html>
