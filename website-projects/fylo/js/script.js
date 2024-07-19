@@ -14,3 +14,12 @@ if (
   themeToggleDarkIcon.classList.remove('hidden');
 }
 
+// Listen for toggle button click
+
+themeToggleBtn.addEventListener('click', toggleMode)
+
+function toggleMode () {
+  // Toggle icon
+  themeToggleDarkIcon.classList.toggle('hidden')
+  themeToggleLightIcon.classList.toggle('hidden')
+}
