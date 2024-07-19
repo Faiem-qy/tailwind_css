@@ -19,20 +19,34 @@ if (
 themeToggleBtn.addEventListener('click', toggleMode);
 
 function toggleMode() {
-  // Toggle icon
+  console.log("Toggle button clicked");
+
+  // Toggle icons
   themeToggleDarkIcon.classList.toggle('hidden');
   themeToggleLightIcon.classList.toggle('hidden');
 
-  // If is set in local storage
+  // If theme is set in local storage
   if (localStorage.getItem('color-theme')) {
-    // If lighe, make dark and save in local storage
+    // If light, make dark and save in local storage
     if (localStorage.getItem('color-theme') === 'light') {
+      console.log("Switching to dark mode");
       document.documentElement.classList.add('dark');
-      localStorage.setItem('color-theme', "dark"
-      );
+      localStorage.setItem('color-theme', 'dark');
     } else {
+      console.log("Switching to light mode");
       document.documentElement.classList.remove('dark');
-      localStorage.setItem('color-theme', "light");
+      localStorage.setItem('color-theme', 'light');
+    }
+  } else {
+    // If theme is not in local storage
+    if (document.documentElement.classList.contains('dark')) {
+      console.log("Removing dark mode");
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('color-theme', 'light');
+    } else {
+      console.log("Adding dark mode");
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('color-theme', 'dark');
     }
   }
 }

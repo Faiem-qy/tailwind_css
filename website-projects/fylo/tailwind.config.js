@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./*.html'],
+  content: ['./*.html', './**/*.html', './src/**/*.{js,jsx,ts,tsx}'],
+  darkMode: 'class', // Ensure this line is present
   theme: {
     extend: {
       colors: {
@@ -16,7 +17,7 @@ module.exports = {
         sans: ['Raleway', 'sans-serif'],
         opensans: ['Open Sans', 'sans-serif'],
       },
-      backgroundImage: (theme) => ({
+      backgroundImage: theme => ({
         'logo-dark-mode': "url('../images/logo-dark-mode.svg')",
         'logo-light-mode': "url('../images/logo-light-mode.svg')",
         'curvy-dark-mode': "url('../images/bg-curvy-dark-mode.svg')",
@@ -24,11 +25,5 @@ module.exports = {
       }),
     },
   },
-  variants: {
-    extend: {
-      backgroundImage: ['dark'],
-    },
-  },
   plugins: [],
 }
-
