@@ -16,10 +16,23 @@ if (
 
 // Listen for toggle button click
 
-themeToggleBtn.addEventListener('click', toggleMode)
+themeToggleBtn.addEventListener('click', toggleMode);
 
-function toggleMode () {
+function toggleMode() {
   // Toggle icon
-  themeToggleDarkIcon.classList.toggle('hidden')
-  themeToggleLightIcon.classList.toggle('hidden')
+  themeToggleDarkIcon.classList.toggle('hidden');
+  themeToggleLightIcon.classList.toggle('hidden');
+
+  // If is set in local storage
+  if (localStorage.getItem('color-theme')) {
+    // If lighe, make dark and save in local storage
+    if (localStorage.getItem('color-theme') === 'light') {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('color-theme', "dark"
+      );
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('color-theme', "light");
+    }
+  }
 }
