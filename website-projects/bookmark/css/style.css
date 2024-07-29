@@ -608,6 +608,10 @@ video {
   display: none;
 }
 
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
+
 .items-center {
   align-items: center;
 }
@@ -711,5 +715,15 @@ video {
 @media (min-width: 768px) {
   .md\:flex {
     display: flex;
+  }
+}
+
+@media (min-width: 1020px) {
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
   }
 }
