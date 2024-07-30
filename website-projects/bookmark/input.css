@@ -2,7 +2,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-@media(min-width:1020px) {
+@media screen(lg) {
   .bg-hero {
     width: 2000px;
     height: 300px;
