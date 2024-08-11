@@ -1102,11 +1102,33 @@ video {
   left: 0;
   background: #000;
   transform: rotate(0);
-  transitioin: all 0.5s;
+  transition: all 0.5s;
 }
 
 .hamburger-middle {
   transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+  background: #000;
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }
 
 .hover\:border-softBlue:hover {
