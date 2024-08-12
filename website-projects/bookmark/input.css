@@ -33,18 +33,14 @@
   position: relative;
 }
 
-.hamburger-top .hamburger-middle .hamburger-bottom {
-  content: "";
+.hamburger span {
   position: absolute;
   width: 24px;
   height: 3px;
-  top: 0;
-  left: 0;
   background: #000;
-  transform: rotate(0);
+  left: 0;
   transition: all 0.5s;
 }
-
 .hamburger-middle {
   transform: translateY(7px);
 }
