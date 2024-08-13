@@ -52,7 +52,19 @@
       </div>
 
       <!-- Mobile Menu -->
-       <div id="menu" class="fixed inset-0 z-20 flex flex-col items-center self-end w-full h-full m-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-white uppercase divide-y divide-gray-500 opacity-90 bg-veryDarkBlue"></div>
+      <!-- Mobile Menu -->
+      <!-- Mobile Menu with divide-y -->
+      <div
+        id="menu"
+        class="fixed inset-0 z-20 flex flex-col items-center self-end w-full h-full min-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-white uppercase bg-veryDarkBlue"
+      >
+        <div class="w-full flex flex-col divide-y divide-gray-500">
+          <a href="#features" class="block py-3 text-center">Features</a>
+          <a href="#download" class="block py-3 text-center">Download</a>
+          <a href="#faq" class="block py-3 text-center">FAQ</a>
+          <a href="#" class="block py-3 text-center">Login</a>
+        </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
