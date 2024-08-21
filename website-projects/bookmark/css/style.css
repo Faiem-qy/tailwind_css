@@ -1157,11 +1157,14 @@ video {
 .open {
   transform: rotate(90deg);
   transform: translateY(0px);
+  position: fixed;
+  top: 50px;
+  right: 25px;
 }
 
 .open .hamburger-top {
   transform: rotate(45deg) translateY(6px) translateX(6px);
-  background-color:#fff
+  background-color: #fff;
 }
 
 .open .hamburger-middle {
@@ -1170,7 +1173,7 @@ video {
 
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
-  background-color:#fff
+  background-color: #fff;
 }
 
 .hover\:border-softBlue:hover {
